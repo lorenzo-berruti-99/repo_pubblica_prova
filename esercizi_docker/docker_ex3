@@ -1,0 +1,7 @@
+# esercizio 3
+# quando fai run, puoi cambiare la variabie d'ambiente con -e
+FROM alpine
+
+ENV WELCOME_MESSAGE="Welcome to Docker World"
+
+CMD echo ${WELCOME_MESSAGE}
