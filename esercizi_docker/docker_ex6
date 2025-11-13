@@ -1,0 +1,16 @@
+# esercizio 6
+# creare il container specificando "a.py" per vedere "Overridden hello".
+# Senza specificare opzioni esce "Hello, World!"
+FROM ubuntu:rolling
+
+RUN apt update && apt install python3 -y
+
+COPY hello.py /home/hello.py
+
+COPY a.py /home/a.py
+
+WORKDIR /home
+
+ENTRYPOINT [ "python3" ]
+
+CMD [ "hello.py" ]
