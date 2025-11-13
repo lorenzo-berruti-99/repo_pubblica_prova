@@ -13,3 +13,4 @@
 | 2.1 | 17:14 | Lorenzo Berruti | Aggiunta esercizio 1 |
 | 2.2 | 17:40 | Lorenzo Berruti | Aggiunta esercizio 3 |
 | 2.3 | 13/11/2025 - 12:19 | Lorenzo Berruti | Aggiunta esercizio 2 |
+| 2.4 | 16:05 | Lorenzo Berruti | Aggiunta esercizio docker postgres |
