@@ -1,0 +1,14 @@
+#come immagine di base usiamo nginx
+FROM nginx
+
+
+#mettiamo index.html nella cartella corretta
+#COPY index.html /usr/share/nginx/html
+
+#oppure creiamo direttamente il file
+RUN echo "Welcome to Dockerlab!" > /usr/share/nginx/html/index.html
+
+#confinguriamo nginx in maniera che giri in foreground impeedendogli di terminare
+RUN echo "daemon off;" >> /etc/nginx/nginx.conf
+
+CMD ["nginx"]
